@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyShop - Flipkart Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MyShop</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#deals">Deals</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+      <span onclick="openLogin()">🔐 Login</span>
+      <span>🛒 <span id="cart-count">0</span></span>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to MyShop</h1>
+      <p>Your one-stop shop for the latest products!</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="products-section">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="card">
+        <img src="images/bridal_set.jpeg" alt="Product 1" class="product-img" />
+        <h3>Bridal Lahanga</h3>
+        <p>$98.35</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/Groom_set.jpeg" alt="Product 2" class="product-img" />
+        <h3>Sherwani</h3>
+        <p>$132.65</p>
+        <button>Add to Cart</button>
+      </div>
+        <div class="card">
+        <img src="images/ladies_jeans.jpg" alt="Product 2" class="product-img" />
+        <h3>Jeans For Girls</h3>
+        <p>$25.36</p>
+        <button>Add to Cart</button>
+      </div>
+         <div class="card">
+        <img src="images/allen solly.webp" alt="Product 2" class="product-img" />
+        <h3>Shirts For Men</h3>
+        <p>$24.99</p>
+        <button>Add to Cart</button>
+      </div>
+            <div class="card">
+        <img src="images/jersey.webp" alt="Product 2" class="product-img" />
+        <h3>Jersey</h3>
+        <p>$10.25</p>
+        <button>Add to Cart</button>
+      </div>
+            <div class="card">
+        <img src="images/puma.jpg" alt="Product 2" class="product-img" />
+        <h3>T-Shirts</h3>
+        <p>$15.69</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals" class="deals-section">
+    <h2>Today's Deals</h2>
+    <div class="deals-content">
+      <p>🎉 Flat 50% off on all cloths! 🔌</p>
+      <p>🧥 Fashion sale starts at ₹199 only!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
